@@ -5,6 +5,19 @@ https://zenn.dev/unreact/articles/nextjs-advanced-features-static-html-export-jp
 next.jsは最高ですが,下記の機能を使うとoutフォルダが作成されないので注意が必要です
 
 
+サポートされている機能
+  静的サイトの構築に必要なNext.jsのコア機能の大部分がサポートされています。
+  使用時の動的ルートgetStaticPaths
+  でプリフェッチnext/link
+  JavaScriptのプリロード
+  動的インポート
+  任意のスタイリングオプション（CSSモジュール、styled-jsxなど）
+  クライアント側のデータフェッチ
+  getStaticProps
+  getStaticPaths
+  カスタムローダーを使用した画像の最適化
+
+
 サポートされていない機能
   Node.jsサーバーを必要とする機能、またはビルドプロセス中に計算できない動的ロジックはサポートされていません。
   画像の最適化（デフォルトのローダー）

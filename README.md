@@ -1,3 +1,6 @@
+### 始めに
+vscodeのプラグインvscode-styled-componentsを導入すると開発が早くなります
+
 ### src ディレクトリ以下の構成
 
 - components
