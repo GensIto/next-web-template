@@ -10,9 +10,10 @@ vscodeのプラグインvscode-styled-componentsを導入すると開発が早�
 
  - styles
    - tailwind cssを採用しています
+   - component内にcssを書き示せるため保守・管理・運用がしやすそうなので,,,
    - どうしてもcssを書きたくなった時はstyled componentで書いてください
-   - ルールとしてはcomponent名のフォルダを作成しそこにindex.jsxとstyled.js(jsx)を作成してください
-   - 例外としては著しく可読性が低くならないのならまとめて書いてしまってもいいです
+   - ルールとしてはcomponent名のフォルダを作成しそこにcomponentName.jsxとstyled.js(jsx)を作成してください
+   - 例外としては著しく可読性が低くならないのならまとめて書いてしまってもいいです(50行以下程度)
 
 ### styled conponentの例
     ├── components
@@ -28,12 +29,14 @@ vscodeのプラグインvscode-styled-componentsを導入すると開発が早�
      |    │   │     ├── styled.jsx
      ```
 
-    - hooks
-      - ここには独自hooksを入れてください
-      - media.jsはstyled componentのレスポンシブのhooksです
-      - ScrollAnimationはスクロールClient Heightの90％になるとClassName jsActiveが付き下からフェードアップしてきます Active時のアニメーションを変えたければglobal.cssを変更してください
-
 ### atomic design内で説明がいると思ったもの
   - Templates & Organisms 配下のDir***.jsx
     - urlに/が入ったときにheaderのロゴが表示されなくなったのでそれの応急処置
+
+### hooks
+ここには独自hooksを入れてください
+media.jsはstyled componentのレスポンシブのhooksです
+ScrollAnimationはスクロールClient Heightの90％になるとClassName jsActiveが付き下からフェードアップしてきます Active時のアニメーションを変えたければglobal.cssを変更してください
+
+
 

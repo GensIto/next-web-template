@@ -3,7 +3,7 @@ import {DropDownDownArrow} from '../Atoms/DropDown/Head/DropDownDownArrow';
 import {useState} from 'react';
 import {DropDownUpArrow} from '../Atoms/DropDown/Head/DropDownUpArrow';
 
-export const DropDownMenu = () => {
+export const DropDownMenu = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const handleClick = () => {
     setIsOpen(!isOpen);
@@ -14,7 +14,7 @@ export const DropDownMenu = () => {
       {/* HEAD */}
       <h2>THIS IS DROP DOWN</h2>
       {/* BODY */}
-      {isOpen ? <DropDownBody /> : null}
+      {isOpen ? <DropDownBody content={props.content} /> : null}
       {/* FOOT */}
       {isOpen ? (
         <div onClick={handleClick}>

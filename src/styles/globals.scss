@@ -1,6 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: normal;
+    font-feature-settings: 'palt';
+    font-kerning: normal;
+    color: #333;
+    line-break: strict;
+}
+
 .jsScroll {
     opacity: 0;
     transform: translateY(10px);
