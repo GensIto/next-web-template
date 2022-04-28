@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const prodUrl = 'https://ate-u.heteml.net/test/ito_test/next/'; // 配置先のURLを記載する
-const localUrl = 'http://localhost:3001/'; // 作業時はlocalにしておく
+const localUrl = 'http://localhost:3000/'; // 作業時はlocalにしておく
 const baseUrl = localUrl; // 👈 開発時はlocalUrl 本番にあげるときはprodUrl
 
 module.exports = {

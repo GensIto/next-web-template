@@ -29,11 +29,16 @@ export default function ScrollAnimation({children}) {
   // 今回はwindowに一度だけ登録したいので空文字[]を書く
   // 分かりやすく噛み砕くと 第二引数をしたら第一引数をする
   // もし第二引数を書かなければ無限ループの可能性が高まる
-  useEffect(() => {
-    //スクロールイベントリスナーに登録
-    window.addEventListener('scroll', AnimationSwitch, false);
-    window.addEventListener('scroll', handleScroll);
-  }, []);
+  useEffect(
+    () => {
+      //スクロールイベントリスナーに登録
+      window.addEventListener('scroll', AnimationSwitch, false);
+      window.addEventListener('scroll', handleScroll);
+    },
+    [
+      /**初回のみ登録ここの概念は難しい */
+    ]
+  );
 
   return <div className="jsScroll">{children}</div>;
 }

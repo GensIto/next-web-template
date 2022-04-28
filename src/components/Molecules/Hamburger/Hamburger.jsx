@@ -27,13 +27,19 @@ export default function Hamburger() {
           {isOpen ? (
             <HamburgerMenuActive className="flex space-x-4">
               <Link href="/">
-                <a className="ml-4 sm:m-0 text-gray-300">Home LINK</a>
+                <a className="ml-4 sm:m-0">Home LINK</a>
+              </Link>
+              <Link href="/about">
+                <a className="ml-4 sm:m-0">About LINK</a>
               </Link>
             </HamburgerMenuActive>
           ) : (
             <HamburgerMenu className="flex space-x-4">
               <Link href="/">
-                <a className="ml-4 sm:m-0 text-gray-300">Home LINK</a>
+                <a className="ml-4 sm:m-0">Home LINK</a>
+              </Link>
+              <Link href="/about">
+                <a className="ml-4 sm:m-0">About LINK</a>
               </Link>
             </HamburgerMenu>
           )}

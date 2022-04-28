@@ -1,6 +1,10 @@
 import {Button} from '../components/Atoms/Button/Button';
 import HomeLayout from '../components/Templates/HomeLayout';
 import {ArrowButton} from '../components/Atoms/Button/ArrowButton';
+import {FlexItem} from '../components/Molecules/FlexItem';
+import {DropDownMenu} from '../components/Molecules/DropDownMenu';
+import ScrollAnimation from '../hooks/ScrollAnimation';
+import styled from 'styled-components';
 
 export default function Home() {
   return (
@@ -18,6 +22,37 @@ export default function Home() {
         <ArrowButton color="yellow" txt="test" />
         <ArrowButton color="red" txt="test" />
       </div>
+      <div className="flex justify-between">
+        <FlexItem />
+        <FlexItem />
+        <FlexItem />
+      </div>
+      <DropDownMenu />
+      <ScrollAnimation>
+        <Box />
+      </ScrollAnimation>
+      <ScrollAnimation>
+        <Box />
+      </ScrollAnimation>
+      <ScrollAnimation>
+        <Box />
+      </ScrollAnimation>
+      <ScrollAnimation>
+        <Box />
+      </ScrollAnimation>
+      <ScrollAnimation>
+        <Box />
+      </ScrollAnimation>
+      <ScrollAnimation>
+        <Box />
+      </ScrollAnimation>
     </HomeLayout>
   );
 }
+
+const Box = styled.div`
+  height: 100px;
+  width: 100px;
+  background-color: #333;
+  margin: 10rem auto;
+`;

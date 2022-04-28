@@ -12,7 +12,7 @@ export default function DirLayout({children, title, description}) {
         <meta name="viewport" content="width=device-width,initial-scale=1" />
       </Head>
       <DirHeader />
-      <main className="w-screen px-4">{children}</main>
+      <main className="w-screen max-w-screen-2xl px-4 mx-auto">{children}</main>
       <Footer />
     </>
   );
