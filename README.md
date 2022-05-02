@@ -14,6 +14,10 @@ vscodeのプラグインvscode-styled-componentsを導入すると開発が早�
    - どうしてもcssを書きたくなった時はstyled componentで書いてください
    - ルールとしてはcomponent名のフォルダを作成しそこにcomponentName.jsxとstyled.js(jsx)を作成してください
    - 例外としては著しく可読性が低くならないのならまとめて書いてしまってもいいです(50行以下程度)
+   - 参考URLs
+     - [styled-componentsを使ってCSS Animationを実装する方法](https://qiita.com/ku1987/items/89ef25c8c59286d9a181)
+     - [Next.jsでstyled-componentsを使うときに最初に設定しておくこと【完全版】](https://zenn.dev/nbr41to/articles/c0c691653e3d55)
+     - [styled-components でもカスタムデータ属性を使うと綺麗にかけて便利](https://qiita.com/elzup/items/cecabc55a12103215d03)
 
 ### styled conponentの例
     ├── components
@@ -31,7 +35,7 @@ vscodeのプラグインvscode-styled-componentsを導入すると開発が早�
 
 ### atomic design内で説明がいると思ったもの
   - Templates & Organisms 配下のDir***.jsx
-    - urlに/が入ったときにheaderのロゴが表示されなくなったのでそれの応急処置
+    - urlにroot/aboutになったときにheaderのロゴが表示されなくなったのでそれの応急処置
 
 ### hooks
 ここには独自hooksを入れてください

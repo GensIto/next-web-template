@@ -1,13 +1,21 @@
 import React from 'react';
+import ScrollAnimation from '../../hooks/ScrollAnimation';
 import {DropDownMenu} from '../Molecules/DropDownMenu';
 
 export const DropDonnList = () => {
   return (
-    <ul>
+    <ul className=" flex flex-col space-y-8">
       {ListItem.map((item) => (
-        <DropDownMenu key={item.id} title={item.title} content={item.content} />
+        <li>
+          <ScrollAnimation>
+            <DropDownMenu
+              key={item.id}
+              title={item.title}
+              content={item.content}
+            />
+          </ScrollAnimation>
+        </li>
       ))}
-      <li></li>
     </ul>
   );
 };
