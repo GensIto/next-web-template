@@ -33,6 +33,13 @@ vscodeのプラグインvscode-styled-componentsを導入すると開発が早�
      |    │   │     ├── styled.jsx
      ```
 
+
+### swiperについて
+  - 参考urls
+    - [Next.js+Typescript Swiperでカルーセルを作成する](https://qiita.com/Hiiisan/items/9561cabb7d125a431df7)
+    - [Next.js+Typescript Swiperで作成したカルーセルのCSSを変更する](https://qiita.com/Hiiisan/items/64783ecace30ade32411)
+
+
 ### atomic design内で説明がいると思ったもの
   - Templates & Organisms 配下のDir***.jsx
     - urlにroot/aboutになったときにheaderのロゴが表示されなくなったのでそれの応急処置
