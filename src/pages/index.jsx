@@ -8,6 +8,8 @@ import {KvImg} from '../components/Atoms/Kv/KvImg';
 import {Section} from '../components/Organisms/Section';
 import {Container} from '../components/Organisms/Container';
 import {Tabs} from '../components/Molecules/Tabs';
+import {MotionDemo} from '../components/Atoms/MotionDemo';
+import {DropDonnList} from '../components/Organisms/DropDonnList';
 
 export default function Home() {
   return (
@@ -37,18 +39,24 @@ export default function Home() {
         <Container size="">
           <div className="flex justify-between">
             <div className="w-full">
-              <DropDownMenu content="TEST1!!!" />
+              <DropDownMenu title="TEST1" content="TEST1!!!" />
             </div>
             <div className="w-full">
-              <DropDownMenu content="TEST2!!!" />
+              <DropDownMenu title="TEST2" content="TEST2!!!" />
             </div>
             <div className="w-full">
-              <DropDownMenu content="TEST3!!!" />
+              <DropDownMenu title="TEST3" content="TEST3!!!" />
             </div>
             <div className="w-full">
-              <DropDownMenu content="TEST4!!!" />
+              <DropDownMenu title="TEST4" content="TEST4!!!" />
             </div>
           </div>
+        </Container>
+      </Section>
+
+      <Section top="md" bottom="md">
+        <Container size="mqfull">
+          <DropDonnList />
         </Container>
       </Section>
 
@@ -67,6 +75,12 @@ export default function Home() {
       <Section top="md" bottom="md">
         <Container size="mqfull">
           <Tabs />
+        </Container>
+      </Section>
+
+      <Section top="md" bottom="md">
+        <Container size="mqfull">
+          <MotionDemo />
         </Container>
       </Section>
     </HomeLayout>

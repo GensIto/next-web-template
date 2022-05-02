@@ -30,3 +30,6 @@ next.jsは最高ですが,下記の機能を使うとoutフォルダが作成さ
   インクリメンタル静的再生
   fallback: true
   getServerSideProps
+
+
+package.jsonのhomepageのurlの変更忘れずに

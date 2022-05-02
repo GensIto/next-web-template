@@ -1,0 +1,7 @@
+https://www.framer.com/docs/introduction/
+
+Framer Motionを採用しています
+簡単なアニメーションを簡単にしかもいい感じに動かせます
+components/Atom/MotionDemo をみるとイメージが掴めるかもしれません
+
+複雑なのも可能そうですが難しそうなので勉強して理解できたらまた書き記します

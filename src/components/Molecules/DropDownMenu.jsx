@@ -12,7 +12,7 @@ export const DropDownMenu = (props) => {
   return (
     <div className="border-indigo-600 border-2 border-solid">
       {/* HEAD */}
-      <h2>THIS IS DROP DOWN</h2>
+      <h2>{props.title}</h2>
       {/* BODY */}
       {isOpen ? <DropDownBody content={props.content} /> : null}
       {/* FOOT */}

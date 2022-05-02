@@ -17,6 +17,7 @@ module.exports = {
         return {
             '/': { page: '/' }
             // '/about/': { page: '/about' } // スラッシュ強制したいのでpathにもスラッシュ入れる
+            // '/p/hello-nextjs': { page: '/post', query: { title: 'hello-nextjs' } },
             // 👆page配下にファイルが増えたら使いそう
         };
     }
