@@ -19,8 +19,9 @@ const StyledHamburgerBtn = styled.div`
     display: block;
     position: fixed;
     z-index: 3;
-    right: 13px;
-    top: 12px;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 12px;
     width: 42px;
     height: 42px;
     cursor: pointer;

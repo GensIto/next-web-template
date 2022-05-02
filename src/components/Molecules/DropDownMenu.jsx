@@ -10,7 +10,7 @@ export const DropDownMenu = (props) => {
   };
 
   return (
-    <div className="w-40 border-indigo-600 border-2 border-solid">
+    <div className="border-indigo-600 border-2 border-solid">
       {/* HEAD */}
       <h2>THIS IS DROP DOWN</h2>
       {/* BODY */}

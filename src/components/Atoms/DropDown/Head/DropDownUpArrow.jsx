@@ -14,7 +14,7 @@ const ClickBtn = styled.h1`
   position: relative;
   color: #fff;
   padding: 0.5rem;
-  width: 10rem;
+  width: 100%;
   background: gray;
   &::after {
     top: 45%;

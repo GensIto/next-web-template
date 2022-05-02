@@ -9,9 +9,12 @@ export const HamburgerMenu = styled.div`
 
 export const HamburgerMenuActive = styled.div`
   flex-direction: column;
-  position: absolute;
-  top: 50px;
-  right: 0;
-  padding: 0 1rem 1rem 0;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+  z-index: 2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 50px;
 `;

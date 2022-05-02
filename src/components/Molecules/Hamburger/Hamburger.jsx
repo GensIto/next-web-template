@@ -25,21 +25,21 @@ export default function Hamburger() {
       <nav>
         <div className="flex items-center pl-8 h-14">
           {isOpen ? (
-            <HamburgerMenuActive className="flex space-x-4">
+            <HamburgerMenuActive className="flex space-x-0 sm:space-x-4">
               <Link href="/">
-                <a className="ml-4 sm:m-0">Home LINK</a>
+                <a className="m-0 p-8 sm:p-0">Home LINK</a>
               </Link>
               <Link href="/about">
-                <a className="ml-4 sm:m-0">About LINK</a>
+                <a className="m-0 p-8 sm:p-0">About LINK</a>
               </Link>
             </HamburgerMenuActive>
           ) : (
-            <HamburgerMenu className="flex space-x-4">
+            <HamburgerMenu className="flex space-x-0 sm:space-x-4">
               <Link href="/">
-                <a className="ml-4 sm:m-0">Home LINK</a>
+                <a className="m-0">Home LINK</a>
               </Link>
               <Link href="/about">
-                <a className="ml-4 sm:m-0">About LINK</a>
+                <a className="m-0">About LINK</a>
               </Link>
             </HamburgerMenu>
           )}

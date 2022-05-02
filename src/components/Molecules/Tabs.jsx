@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const Tabs = ({color}) => {
+export const Tabs = () => {
   const [openTab, setOpenTab] = useState(1);
   return (
     <>
@@ -10,13 +10,17 @@ const Tabs = ({color}) => {
             className="flex mb-0 list-none flex-wrap pt-3 pb-4 flex-row"
             role="tablist"
           >
+            {/* /=====================================================
+            * TAB TITLE
+            /======================================================*/}
+            {/* 1 */}
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
               <a
                 className={
-                  'text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal ' +
+                  'uppercase px-5 py-3 shadow-lg rounded block leading-normal ' +
                   (openTab === 1
-                    ? 'text-white bg-' + color + '-600'
-                    : 'text-' + color + '-600 bg-white')
+                    ? 'text-white bg-indigo-500'
+                    : 'text--600 bg-white')
                 }
                 onClick={(e) => {
                   e.preventDefault();
@@ -26,16 +30,18 @@ const Tabs = ({color}) => {
                 href="#link1"
                 role="tablist"
               >
-                Profile
+                TAB TITLE1
               </a>
             </li>
+
+            {/* 2 */}
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
               <a
                 className={
-                  'text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal ' +
+                  'uppercase px-5 py-3 shadow-lg rounded block leading-normal ' +
                   (openTab === 2
-                    ? 'text-white bg-' + color + '-600'
-                    : 'text-' + color + '-600 bg-white')
+                    ? 'text-white bg-indigo-500'
+                    : 'text-color-600 bg-white')
                 }
                 onClick={(e) => {
                   e.preventDefault();
@@ -45,16 +51,18 @@ const Tabs = ({color}) => {
                 href="#link2"
                 role="tablist"
               >
-                Settings
+                TAB TITLE2
               </a>
             </li>
+
+            {/* 3 */}
             <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
               <a
                 className={
-                  'text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal ' +
+                  'uppercase px-5 py-3 shadow-lg rounded block leading-normal ' +
                   (openTab === 3
-                    ? 'text-white bg-' + color + '-600'
-                    : 'text-' + color + '-600 bg-white')
+                    ? 'text-white bg-indigo-500'
+                    : 'text-color-600 bg-white')
                 }
                 onClick={(e) => {
                   e.preventDefault();
@@ -64,43 +72,30 @@ const Tabs = ({color}) => {
                 href="#link3"
                 role="tablist"
               >
-                Options
+                TAB TITLE3
               </a>
             </li>
           </ul>
+
+          {/* /=====================================================
+           * TAB CONTENT
+          /======================================================*/}
           <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded">
             <div className="px-4 py-5 flex-auto">
               <div className="tab-content tab-space">
+                {/* 1 */}
                 <div className={openTab === 1 ? 'block' : 'hidden'} id="link1">
-                  <p>
-                    Collaboratively administrate empowered markets via
-                    plug-and-play networks. Dynamically procrastinate B2C users
-                    after installed base benefits.
-                    <br />
-                    <br /> Dramatically visualize customer directed convergence
-                    without revolutionary ROI.
-                  </p>
+                  <p>TAB CONTENT1</p>
                 </div>
+
+                {/* 2 */}
                 <div className={openTab === 2 ? 'block' : 'hidden'} id="link2">
-                  <p>
-                    Completely synergize resource taxing relationships via
-                    premier niche markets. Professionally cultivate one-to-one
-                    customer service with robust ideas.
-                    <br />
-                    <br />
-                    Dynamically innovate resource-leveling customer service for
-                    state of the art customer service.
-                  </p>
+                  <p>TAB CONTENT2</p>
                 </div>
+
+                {/* 3 */}
                 <div className={openTab === 3 ? 'block' : 'hidden'} id="link3">
-                  <p>
-                    Efficiently unleash cross-media information without
-                    cross-media value. Quickly maximize timely deliverables for
-                    real-time schemas.
-                    <br />
-                    <br /> Dramatically maintain clicks-and-mortar solutions
-                    without functional solutions.
-                  </p>
+                  <p>TAB CONTENT3</p>
                 </div>
               </div>
             </div>
@@ -110,11 +105,3 @@ const Tabs = ({color}) => {
     </>
   );
 };
-
-export default function TabsRender() {
-  return (
-    <>
-      return <Tabs color="pink" />;
-    </>
-  );
-}

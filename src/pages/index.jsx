@@ -7,6 +7,7 @@ import ScrollAnimation from '../hooks/ScrollAnimation';
 import {KvImg} from '../components/Atoms/Kv/KvImg';
 import {Section} from '../components/Organisms/Section';
 import {Container} from '../components/Organisms/Container';
+import {Tabs} from '../components/Molecules/Tabs';
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
         </Container>
       </Section>
 
-      <Section top="sm" bottom="sm">
+      <Section top="md" bottom="md">
         <Container size="full">
           <Button color="" txt="test" />
           <Button color="green" txt="test" />
@@ -34,14 +35,24 @@ export default function Home() {
 
       <Section top="md" bottom="md">
         <Container size="">
-          <DropDownMenu content="TEST1!!!" />
-          <DropDownMenu content="TEST2!!!" />
-          <DropDownMenu content="TEST3!!!" />
-          <DropDownMenu content="TEST4!!!" />
+          <div className="flex justify-between">
+            <div className="w-full">
+              <DropDownMenu content="TEST1!!!" />
+            </div>
+            <div className="w-full">
+              <DropDownMenu content="TEST2!!!" />
+            </div>
+            <div className="w-full">
+              <DropDownMenu content="TEST3!!!" />
+            </div>
+            <div className="w-full">
+              <DropDownMenu content="TEST4!!!" />
+            </div>
+          </div>
         </Container>
       </Section>
 
-      <Section top="lg" bottom="lg">
+      <Section top="md" bottom="md">
         <Container size="mqfull">
           <ScrollAnimation>
             <div className="flex justify-between">
@@ -50,6 +61,12 @@ export default function Home() {
               <FlexItem />
             </div>
           </ScrollAnimation>
+        </Container>
+      </Section>
+
+      <Section top="md" bottom="md">
+        <Container size="mqfull">
+          <Tabs />
         </Container>
       </Section>
     </HomeLayout>
